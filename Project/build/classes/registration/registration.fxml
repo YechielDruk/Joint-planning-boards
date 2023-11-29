@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registration.RegistrationController">
+   <children>
+      <AnchorPane fx:id="discussionPane" layoutX="1.0" layoutY="35.0" prefHeight="485.0" prefWidth="280.0" style="-fx-background-color: #1C1921;">
+         <children>
+            <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="299.0" prefWidth="280.0" style="-fx-background-color: #F0E68C;">
+               <children>
+                  <ComboBox fx:id="choose_board" layoutX="14.0" layoutY="183.0" prefHeight="25.0" prefWidth="196.0" promptText="Select board" />
+                  <Label layoutX="14.0" layoutY="19.0" text="Add user" textFill="#0000CD">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="last_name_field" layoutX="14.0" layoutY="67.0" prefHeight="25.0" prefWidth="94.0" promptText="Name" />
+                  <TextField fx:id="first_name_field" layoutX="116.0" layoutY="67.0" prefHeight="25.0" prefWidth="94.0" promptText="First name" />
+                  <TextField fx:id="username_field" layoutX="14.0" layoutY="106.0" prefHeight="25.0" prefWidth="196.0" promptText="username" />
+                  <PasswordField fx:id="password_field" layoutX="14.0" layoutY="145.0" prefHeight="25.0" prefWidth="196.0" promptText="Password" />
+                  <Button fx:id="add_user_button" layoutX="98.0" layoutY="237.0" mnemonicParsing="false" onAction="#addUserOnAction" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #F53400;" text="Add" textFill="WHITE" />
+                  <Label fx:id="user_message" layoutX="15.0" layoutY="43.0" prefHeight="11.0" prefWidth="196.0" textFill="#ee5454">
+                     <font>
+                        <Font name="Arial" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1.0" layoutY="305.0" prefHeight="185.0" prefWidth="280.0" style="-fx-background-color: #F0E68C;">
+               <children>
+                  <Label layoutX="14.0" layoutY="30.0" text="Add board" textFill="#0000CD">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="add_board_button" layoutX="98.0" layoutY="119.0" mnemonicParsing="false" onAction="#addBoardOnAction" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #F53400;" text="Add" textFill="WHITE" />
+                  <TextField fx:id="field_board_name" layoutX="14.0" layoutY="80.0" prefHeight="25.0" prefWidth="196.0" promptText="Board name" />
+                  <Label fx:id="board_message" layoutX="15.0" layoutY="55.0" prefHeight="11.0" prefWidth="307.0" textFill="#ee5454">
+                     <font>
+                        <Font name="Arial" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="35.0" prefWidth="280.0" style="-fx-background-color: #0000CD;">
+         <children>
+            <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="1.0" layoutY="1.0" prefHeight="31.0" prefWidth="280.0" text="Welcome" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1.0" layoutY="521.0" prefHeight="45.0" prefWidth="280.0" style="-fx-background-color: #0000CD;">
+         <children>
+            <Button fx:id="disconnect_button" layoutX="60.0" layoutY="5.0" mnemonicParsing="false" onAction="#disconnectButtonOnAction" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: #ffffffff;" text="Disconnect" textFill="RED">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
